@@ -26,22 +26,6 @@ ini_set('display_errors', 'On');
      $smarty->display('index.tpl');
    });
 
-   $klein->respond('GET', '/pic[:id]?', function ($request, $response, $service) use ($smarty) {
-
-     // Notice how you can set variables here in the PHP that will get carried into the template files
-     $smarty->assign('picid', $request->id);
-
-     $smarty->display('pic.tpl');
-   });
-
-   $klein->respond('GET', '/album', function ($request, $response, $service) use ($smarty) {
-     $smarty->display('album.tpl');
-   });
-
-   $klein->respond('GET', '/albums', function ($request, $response, $service) use ($smarty) {
-     $smarty->display('albums.tpl');
-   });
-
 
    $klein->dispatch();
 
