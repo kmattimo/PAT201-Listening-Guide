@@ -1,6 +1,4 @@
-{* Smarty *}
-{extends 'base.tpl'}
-{block name='body'}
+
 
 <div class="container">
        <div class="row">
@@ -24,7 +22,7 @@
 		<div  class="row" >
             <div class="col-sm-4">
 				<button id="playPause" class="btn btn-primary" onclick = "playPause()">Play/Pause</button>
-				{* <button class="btn btn-primary" onclick = "document.getElementById('song').pause()">Pause</button> *}
+				
 				<button class="btn btn-primary" onclick = "seekReset()">Restart</button>
 			</div>	
 			 <div class="col-sm-4">	
@@ -85,19 +83,9 @@
 			</div>
 		</div>
 		<br><br>
-		{*
-		 <div class="row">
-                <div class="col-lg-12">
-					<div class="well well-sm">
-						Songs with parts in the title are <code>[title] part x </code>  - No punctuation.
-						<br> Tested on Google Chrome.
-					</div>
-                </div>
-         </div>
-		 *}
+
 
 </div>
 		
 <script src="/static/js/pat201.js"></script>
 
-{/block}
